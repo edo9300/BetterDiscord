@@ -19,6 +19,8 @@ class BrowserWindow extends electron.BrowserWindow {
         // Only affect frame if it is *explicitly* set
         // const shouldHaveFrame = BetterDiscord.getSetting("window", "frame");
         // if (typeof(shouldHaveFrame) === "boolean") options.frame = shouldHaveFrame;
+        
+        options.frame = true;
 
         super(options);
         this.__originalPreload = originalPreload;
